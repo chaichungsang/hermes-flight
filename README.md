@@ -1,6 +1,10 @@
-# flightclaw
+# hermes-flight
 
 Track flight prices from Google Flights. Search routes, monitor prices over time, and get alerts when prices drop.
+
+> **Forked from [jackculpan/flightclaw](https://github.com/jackculpan/flightclaw)** — the original OpenClaw skill that this is based on. Stars and credit go to the original author! ⭐
+
+---
 
 ## MCP Server
 
@@ -13,7 +17,7 @@ FlightClaw runs as a local [MCP](https://modelcontextprotocol.io) server, giving
 pip install flights "mcp[cli]"
 
 # Add to Claude Code
-claude mcp add flightclaw -- python3 /path/to/flightclaw/server.py
+claude mcp add hermes-flight -- python3 /path/to/hermes-flight/server.py
 ```
 
 Or in Claude Desktop, add to `claude_desktop_config.json`:
@@ -21,9 +25,9 @@ Or in Claude Desktop, add to `claude_desktop_config.json`:
 ```json
 {
   "mcpServers": {
-    "flightclaw": {
+    "hermes-flight": {
       "command": "python3",
-      "args": ["/path/to/flightclaw/server.py"]
+      "args": ["/path/to/hermes-flight/server.py"]
     }
   }
 }
